@@ -3,7 +3,7 @@
 #
 # Makefile template for C code
 #
-# Author: Gustavo Pantuza Coelho Pinto
+# Author: Gustavo Pantuza Coelho Pinto & Mistkeith
 # Since: 24.03.2016
 #
 #
@@ -125,14 +125,12 @@ start:
 	@echo "Then execute it: bin/$(BINARY) --help"
 	@echo "Happy hacking o/"
 
-
 # Rule for link and generate the binary file
 all: $(OBJECTS)
 	@echo -en "$(BROWN)LD $(END_COLOR)";
 	$(CC) -o $(BINDIR)/$(BINARY) $+ $(DEBUG) $(CFLAGS) $(LIBS)
 	@echo -en "\n--\nBinary file placed at" \
 			  "$(BROWN)$(BINDIR)/$(BINARY)$(END_COLOR)\n";
-
 
 # Rule for object binaries compilation
 $(LIBDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)

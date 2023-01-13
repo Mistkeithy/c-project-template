@@ -1,26 +1,14 @@
 /*
- * ============================================================================
- *
- *       Filename:  main.c
- *
- *    Description:  Main file of the project
- *
- *        Created:  03/24/2016 19:40:56
- *
- *         Author:  Gustavo Pantuza
- *   Organization:  Software Community
- *
- * ============================================================================
+ *	main.c
+ *	cotributors:
+ *		- Gustavo Pantuza
+ *		- Mistkeith (Mistkeithy)
  */
-
 
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "args.h"
-#include "colors.h"
-
-
 
 int
 main (int argc, char* argv[])
@@ -32,11 +20,11 @@ main (int argc, char* argv[])
 
 
 #ifdef DEBUG
-    fprintf(stdout, BLUE "Command line options:\n" NO_COLOR);
-    fprintf(stdout, BROWN "help: %d\n" NO_COLOR, options.help);
-    fprintf(stdout, BROWN "version: %d\n" NO_COLOR, options.version);
-    fprintf(stdout, BROWN "use colors: %d\n" NO_COLOR, options.use_colors);
-    fprintf(stdout, BROWN "filename: %s\n" NO_COLOR, options.file_name);
+    fprintf(stdout, "Command line options:\n");
+    fprintf(stdout, "help: %d\n", options.help);
+    fprintf(stdout, "version: %d\n", options.version);
+    fprintf(stdout, "use colors: %d\n", options.use_colors);
+    fprintf(stdout, "filename: %s\n", options.file_name);
 #endif
 
 

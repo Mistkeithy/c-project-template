@@ -1,30 +1,16 @@
 /*
- * ============================================================================
- *
- *       Filename:  args.c
- *
- *    Description:  Command line options parser using GNU getopt
- *
- *        Created:  24/03/2015 22:00:09 PM
- *       Compiler:  gcc
- *
- *         Author:  Gustavo Pantuza
- *   Organization:  Software Community
- *
- * ============================================================================
+ *	args.c
+ *	cotributors:
+ *		- Gustavo Pantuza
+ *		- Mistkeith (Mistkeithy)
  */
-
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-
 #include "messages.h"
 #include "args.h"
-#include "colors.h"
-
-
 
 /*
  * Sets the default options
